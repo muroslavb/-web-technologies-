@@ -1,0 +1,108 @@
+.trip-plan {
+  background-color: rgb(255, 165, 0);
+  width: 500px;
+  padding: 5px 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+  }
+
+.trip-plan__title {
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  }
+
+.trip-plan__section {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+
+.trip-plan__stage {
+  background-color: rgb(103, 158, 128);
+  margin-bottom: 15px;
+  padding: 10px;
+  }
+
+.trip-plan__stage-title {
+  display: inline-block;
+  background-color: rgb(199, 124, 106);
+  padding: 10px 20px 10px 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 25px;
+  }
+
+.trip-plan__stage-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  }
+
+
+.trip-plan__stage-icon {
+  content: url("icons/rule.png");
+  height: 43px;
+  width: 43px;
+  }
+
+.trip-plan__list {
+  list-style: none;
+  padding: 10px 0 0 0;
+  margin: 0;
+  }
+
+.trip-plan__item {
+  display: flex;
+  align-items: center;
+  background-color: rgb(153, 180, 102);
+  margin: 0px 0px 10px 35px;
+  padding-left: 50px;
+  min-height: 40px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 25px;
+  }
+
+
+.trip-plan__item--route {
+  background-image: url("icons/ad_units.png");
+  }
+
+.trip-plan__item--ticket {
+  background-image: url("icons/airplane_ticket.png");
+  }
+
+.trip-plan__item--hotel {
+  background-image: url("icons/hotel.png");
+  }
+
+.trip-plan__item--car {
+  background-image: url("icons/car_rental.png");
+  }
+
+.trip-plan__item--bar {
+  background-image: url("icons/local_bar.png");
+  }
+
+.trip-plan__item--casino {
+  background-image: url("icons/casino.png");
+  }
+
+.trip-plan__item--museum {
+  background-image: url("icons/museum.png");
+  }
+
+.trip-plan__item--festival {
+  background-image: url("icons/festival.png");
+  }
+
+.trip-plan__label {
+  display: inline-block;
+  background-color: rgb(218, 106, 32);
+  padding: 8px 15px;
+  color: white;
+  }

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма зворотного зв'язку</title>
+  <link rel="stylesheet" href="style_3.css">
+</head>
+<body>
+
+<a href="index.html">⬅️ На головну</a>
+
+<form id="form-get" method="get" autocomplete="on">
+
+  <fieldset tabindex="1">
+    <legend>Особисті дані</legend>
+
+    <label>Ім'я:
+      <input type="text" placeholder="Введіть ім'я" required tabindex="3">
+    </label>
+
+    <label>Коротко про себе:
+      <textarea placeholder="Коротко опишіть себе" rows="4" tabindex="2"></textarea>
+    </label>
+
+    <label>Пароль:
+      <input type="password" placeholder="Abc123" required tabindex="4">
+    </label>
+
+    <label>Email:
+      <input type="email" placeholder="example@domain.com" required tabindex="5">
+    </label>
+
+    <label>Телефон:
+      <input type="tel" placeholder="+380XXXXXXXXX" required tabindex="6">
+    </label>
+
+    <label>Дата народження:
+      <input type="date" required tabindex="7">
+    </label>
+  </fieldset>
+
+  <fieldset tabindex="8">
+    <legend>Питання</legend>
+
+    <p>Група радіо 1:</p>
+    <label><input type="radio" name="r1" tabindex="9"> Варіант 1</label>
+    <label><input type="radio" name="r1" tabindex="10"> Варіант 2</label>
+    <label><input type="radio" name="r1" tabindex="11"> Варіант 3</label>
+
+    <p>Група радіо 2:</p>
+    <label><input type="radio" name="r2" tabindex="12"> Варіант A</label>
+    <label><input type="radio" name="r2" checked tabindex="13"> Варіант B</label>
+    <label><input type="radio" name="r2" tabindex="14"> Варіант C</label>
+
+    <p>Прапорці:</p>
+    <label><input type="checkbox" tabindex="15"> Пункт 1</label>
+    <label><input type="checkbox" tabindex="16"> Пункт 2</label>
+    <label><input type="checkbox" tabindex="17"> Пункт 3</label>
+    <label><input type="checkbox" tabindex="18"> Пункт 4</label>
+  </fieldset>
+
+  <fieldset tabindex="19">
+    <legend>Списки</legend>
+
+    <label>Вибір:
+      <select tabindex="20">
+        <option>Опція 1</option>
+        <option>Опція 2</option>
+        <option selected>Опція 3</option>
+        <option>Опція 4</option>
+        <option>Опція 5</option>
+      </select>
+    </label>
+
+    <label>Множинний:
+      <select multiple size="4" tabindex="21">
+        <option>Мульти 1</option>
+        <option>Мульти 2</option>
+        <option>Мульти 3</option>
+        <option>Мульти 4</option>
+      </select>
+    </label>
+
+    <label>
+      <div>Поради:</div>
+      <input id="block-select" list="colorlist" placeholder="Виберіть або введіть" tabindex="22">
+      <datalist id="colorlist">
+        <option value="Червоний">
+        <option value="Синій">
+        <option value="Жовтий">
+        <option value="Зелений">
+        <option value="Чорний">
+      </datalist>
+    </label>
+  </fieldset>
+
+  <button type="submit" tabindex="23">Надіслати</button>
+  <button type="reset" tabindex="24">Скинути</button>
+</form>
+
+</body>
+</html>

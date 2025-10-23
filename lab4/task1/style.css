@@ -1,0 +1,42 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  word-spacing: normal;
+  }
+
+.text {
+  color: green;
+  text-align: center;
+  }
+
+.text-block {
+  text-align: justify;
+  }
+
+.text--red {
+  color: red;
+  }
+
+.text--nowrap {
+  white-space: nowrap;
+  }
+
+.text--bold-italic {
+  font-weight: bold;
+  font-style: italic;
+  }
+
+.text--shadow {
+  text-shadow: 5px -5px 3px #ff0000;
+  }
+
+.text--cross {
+  text-decoration: line-through;
+  text-transform: uppercase;
+  text-indent: 50px;
+  }
+
+.text--spacing {
+  letter-spacing: 30px;
+  word-spacing: 50px;
+  }

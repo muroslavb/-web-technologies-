@@ -1,0 +1,36 @@
+* {
+  text-align: center;
+  font-size: larger;
+  }
+
+.title {
+  color: red;
+  }
+
+.text--bold {
+  font-weight: bold;
+  }
+
+.text--green {
+  color: green;
+  }
+
+.text--underline {
+  text-decoration: underline;
+  }
+
+.text--crossed {
+  text-decoration: line-through;
+  font-size: 24px;
+  }
+
+.text--bg-yellow {
+  background-color: yellow;
+  }
+
+.line {
+  border: none;
+  height: 4px;
+  width: 65%;
+  background-color: green;
+  }

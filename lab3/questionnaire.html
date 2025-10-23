@@ -3,87 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Реєстраційна форма</title>
+  <title>Document</title>
 </head>
 <body>
 
-<form action="/submit-form" method="post">
+<a href="index.html">⬅️ На головну</a>
+
+<form id="form-get" method="get" autocomplete="on">
 
   <fieldset>
     <legend>Особисті дані</legend>
 
-    <div>
-      <label for="firstName">Ім'я:</label>
-      <input
-        type="text"
-        id="firstName"
-        name="user_firstname"
-        placeholder="Введіть ваше ім'я"
-        required
-        tabindex="1"
-        value="">
-    </div>
+    <p>
+      <label>Ім'я:<br>
+        <input type="text" placeholder="Введіть ім'я" required>
+      </label>
+    </p>
 
-    <div>
-      <label for="lastName">Прізвище:</label>
-      <input
-        type="text"
-        id="lastName"
-        name="user_lastname"
-        placeholder="Введіть ваше прізвище"
-        required
-        tabindex="2"
-        value="">
-    </div>
+    <p>
+      <label>Коротко про себе:<br>
+        <textarea placeholder="Коротко опишіть себе" rows="4"></textarea>
+      </label>
+    </p>
+
+    <p>
+      <label>Пароль:<br>
+        <input type="password" placeholder="Abc123" required>
+      </label>
+    </p>
+
+    <p>
+      <label>Email:<br>
+        <input type="email" placeholder="example@domain.com" required>
+      </label>
+    </p>
+
+    <p>
+      <label>Телефон:<br>
+        <input type="tel" placeholder="+380XXXXXXXXX" required>
+      </label>
+    </p>
+
+    <p>
+      <label>Дата народження:<br>
+        <input type="date" required>
+      </label>
+    </p>
   </fieldset>
 
   <fieldset>
-    <legend>Контактні дані</legend>
-    <div>
-      <label for="email">Електронна пошта:</label>
-      <input
-        type="email"
-        id="email"
-        name="user_email"
-        placeholder="example@mail.com"
-        required
-        autocomplete="off"
-        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-        tabindex="3"
-        value="">
-    </div>
+    <legend>Питання</legend>
 
-    <div>
-      <label for="phone">Телефон:</label>
-      <input
-        type="tel"
-        id="phone"
-        name="user_phone"
-        placeholder="+380 (XX) XXX-XX-XX"
-        required
-        pattern="\+380\s\(\d{2}\)\s\d{3}-\d{2}-\d{2}"
-        tabindex="4"
-        value="">
-    </div>
+    <p>Група радіо 1:</p>
+    <p><label><input type="radio" name="r1"> Варіант 1</label></p>
+    <p><label><input type="radio" name="r1"> Варіант 2</label></p>
+    <p><label><input type="radio" name="r1"> Варіант 3</label></p>
+
+    <p>Група радіо 2:</p>
+    <p><label><input type="radio" name="r2"> Варіант A</label></p>
+    <p><label><input type="radio" name="r2" checked> Варіант B</label></p>
+    <p><label><input type="radio" name="r2"> Варіант C</label></p>
+
+    <p>Прапорці:</p>
+    <p><label><input type="checkbox"> Пункт 1</label></p>
+    <p><label><input type="checkbox"> Пункт 2</label></p>
+    <p><label><input type="checkbox"> Пункт 3</label></p>
+    <p><label><input type="checkbox"> Пункт 4</label></p>
   </fieldset>
 
   <fieldset>
-    <legend>Дані для входу</legend>
-    <div>
-      <label for="password">Пароль:</label>
-      <input
-        type="password"
-        id="password"
-        name="user_password"
-        placeholder="6 символів, 1 велика, 1 мала, 1 цифра"
-        required
-        pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6}$"
-        tabindex="5"
-        value="">
-    </div>
+    <legend>Списки</legend>
+
+    <p>
+      <label>Вибір:<br>
+        <select>
+          <option>Опція 1</option>
+          <option>Опція 2</option>
+          <option selected>Опція 3</option>
+          <option>Опція 4</option>
+          <option>Опція 5</option>
+        </select>
+      </label>
+    </p>
+
+    <p>
+      <label>Множинний:<br>
+        <select multiple size="4">
+          <option>Мульти 1</option>
+          <option>Мульти 2</option>
+          <option>Мульти 3</option>
+          <option>Мульти 4</option>
+        </select>
+      </label>
+    </p>
+
+    <p>
+      <label>Поради:<br>
+        <input list="colorlist" placeholder="Виберіть або введіть">
+        <datalist id="colorlist">
+          <option value="Червоний">
+          <option value="Синій">
+          <option value="Жовтий">
+          <option value="Зелений">
+          <option value="Чорний">
+        </datalist>
+      </label>
+    </p>
   </fieldset>
 
-  <button type="submit" name="submit_button" value="register" tabindex="6">Зареєструватися</button>
+  <p>
+    <button type="submit">Надіслати</button>
+    <button type="reset">Скинути</button>
+  </p>
 
 </form>
 

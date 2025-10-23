@@ -1,0 +1,38 @@
+a {
+  color: purple;
+  }
+
+.other__list a {
+  color: black;
+  text-decoration: none;
+  }
+
+
+ul .menu__list--berries {
+  list-style-type: square;
+  }
+
+li ul .menu__link--no-underline {
+  text-decoration: none;
+  }
+
+.menu__link--main {
+  color: green;
+  }
+
+
+.menu__list--vegetables {
+  list-style-image: url("li.svg");
+  }
+
+
+li ol {
+  list-style-position: inside;
+  margin-left: 25px;
+  padding-left: 0;
+  }
+
+ul li ul {
+  list-style-type: none;
+  }
+

@@ -23,6 +23,7 @@ a {
   }
 
 fieldset {
+  background-color: rgb(240, 240, 240);
   border: 1px solid #ddd;
   border-radius: 6px;
   margin-bottom: 20px;
@@ -32,8 +33,10 @@ fieldset {
 legend {
   font-size: 1.2em;
   font-weight: bold;
-  color: #333;
-  padding: 0 10px;
+  background-color: rgb(100, 200, 200);
+  padding: 10px 20px;
+  border-radius: 12px;
+
   }
 
 label {
@@ -86,11 +89,11 @@ button {
   }
 
 button[type="submit"] {
-  background-color: #28a745;
+  background-color: rgb(0, 153, 0);
   color: white;
   }
 
 button[type="reset"] {
-  background-color: #dc3545;
+  background-color: rgb(204, 0, 0);
   color: white;
   }

@@ -1,0 +1,50 @@
+.container {
+  display: inline-block;
+  margin: 150px;
+  position: relative;
+  }
+
+.block {
+  border: 2px solid;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  transition: opacity 0.8s;
+  }
+
+.block1 {
+  background-color: green;
+  color: white;
+  width: 120px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  }
+
+.block2 {
+  background-color: blue;
+  color: white;
+  width: 140px;
+  height: 80px;
+  top: 0;
+  left: 140px;
+  opacity: 0;
+  }
+
+.block3 {
+  background-color: purple;
+  color: white;
+  width: 140px;
+  height: 80px;
+  top: 0;
+  left: 300px;
+  opacity: 0;
+  }
+
+.block1:hover + .block2 {
+  opacity: 1;
+  }
+
+.block2:hover + .block3 {
+  opacity: 1;
+  }

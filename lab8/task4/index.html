@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task4</title>
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-content">
+    <a href="#" class="logo">Keepsake</a>
+
+    <input type="checkbox" id="menu-toggle-checkbox" class="menu-toggle-checkbox" aria-label="Toggle navigation">
+    <label for="menu-toggle-checkbox" class="menu-toggle">
+      <span class="burger-icon"></span>
+    </label>
+    <div class="nav-wrapper">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Works</a></li>
+          <li><a href="#">Journal</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <button class="like-button" aria-label="Подобається">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1>We're Keepsake, a digital & branding agency</h1>
+      <p>
+        specializing in web design, poster, motion video based in London. We
+        love to turn complex ideas into simple things.
+      </p>
+    </div>
+  </section>
+
+  <section class="works">
+    <div class="container">
+      <header class="section-header-simple">
+        <h2 class="fancy-subtitle">Our Awesome Works</h2>
+        <a href="#" class="view-portfolio-btn">View Portfolio</a>
+      </header>
+
+      <div class="works-grid">
+        <div class="work-card">
+          <img src="img/1.png" alt="Work 1"/>
+          <div class="work-card-content">
+            <h3>Creative Design</h3>
+            <p>Photography, Web Design</p>
+          </div>
+        </div>
+        <div class="work-card">
+          <img src="img/2.png" alt="Work 2"/>
+          <div class="work-card-content">
+            <h3>Branding Identity</h3>
+            <p>Logo, Marketing</p>
+          </div>
+        </div>
+        <div class="work-card">
+          <img src="img/3.png" alt="Work 3"/>
+          <div class="work-card-content">
+            <h3>Web Development</h3>
+            <p>Coding, UI/UX</p>
+          </div>
+        </div>
+        <div class="work-card">
+          <img src="img/4.png" alt="Work 4"/>
+          <div class="work-card-content">
+            <h3>Mobile App</h3>
+            <p>iOS, Android</p>
+          </div>
+        </div>
+        <div class="work-card">
+          <div class="profile-small-card">
+            <div class="profile-avatar-container">
+              <img src="img/7ae28c97-cb1f-4d1d-b74c-4db76b2081ad.jpg" alt="Amanda Seyfried"
+                   class="profile-small-avatar">
+              <button class="profile-add-button" aria-label="Додати в друзі">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                </svg>
+              </button>
+            </div>
+            <div class="profile-text-content">
+              <h3 class="profile-small-name">Amanda Seyfried</h3>
+              <p class="profile-small-handle">@contactaddress</p>
+            </div>
+          </div>
+        </div>
+        <div class="work-card">
+          <img src="img/6.png" alt="Work 5"/>
+          <div class="work-card-content">
+            <h3>UI/UX Design</h3>
+            <p>User Interface</p>
+          </div>
+        </div>
+        <div class="work-card">
+          <img src="img/7.png" alt="Work 7"/>
+          <div class="work-card-content">
+            <h3>Photography</h3>
+            <p>Portraits, Landscape</p>
+          </div>
+        </div>
+        <div class="work-card">
+          <img src="img/8.png" alt="Work 8"/>
+          <div class="work-card-content">
+            <h3>Print Design</h3>
+            <p>Brochures, Flyers</p>
+          </div>
+        </div>
+        <div class="work-card">
+          <img src="img/9.png" alt="Work 9"/>
+          <div class="work-card-content">
+            <h3>Video Editing</h3>
+            <p>Motion Graphics</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+      <h2>Would you love to work with us?</h2>
+      <a href="#" class="contact-button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+          />
+        </svg>
+        Contact us
+      </a>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container">
+      <h2 class="fancy-subtitle">What do we do</h2>
+      <p class="section-description">
+        Donec id elit non mi porta gravida at eget metus. Maecenas faucibus
+        mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum
+        at eros.
+      </p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="icon icon-web"></div>
+          <h3>Web Design</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nostrum
+            perspiciatis qui sit veniam? Architecto autem cum distinctio dolorem ducimus
+            incidunt numquam, odio praesentium provident quis quod quos reprehenderit similique.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="icon icon-motion"></div>
+          <h3>Motion Video</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis culpa cum dolorem
+            doloribus ea exercitationem expedita id quo ratione similique ut, voluptate voluptatibus. Cupiditate
+            eos in optio perspiciatis vel.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="icon icon-print"></div>
+          <h3>Print Design</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequatur cumque dolor esse
+            est et id laborum libero molestias officia recusandae similique,
+            sunt tempore veniam voluptatum? Adipisci dicta repellendus tempora.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="icon icon-illustration"></div>
+          <h3>Illustration</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque delectus dignissimos
+            dolorem enim et excepturi, facere harum laudantium perspiciatis possimus provident,
+            quaerat repudiandae. Accusantium at eius fugit nesciunt tenetur?
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="journal">
+    <div class="container">
+      <h2 class="fancy-subtitle">From the Journal</h2>
+      <p class="section-description">
+        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.
+      </p>
+      <div class="journal-grid">
+        <a href="#" class="journal-item">
+          <div class="journal-image-wrapper">
+            <img src="img/10.png" alt="Journal Post 1"/>
+          </div>
+          <div class="journal-content">
+            <div>
+              <h3>Brand Identity Design</h3>
+              <p>
+                Cras mattis consectetur purus sit amet fermentum. Praesent
+                commodo cursus magna, vel scelerisque nisl.
+              </p>
+            </div>
+            <div class="journal-meta-info">
+              <span>Oct 26, 2014</span>
+              <span class="fancy-subtitle">Identity</span>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="journal-item">
+          <div class="journal-image-wrapper">
+            <img src="img/11.png" alt="Journal Post 2"/>
+          </div>
+          <div class="journal-content">
+            <div>
+              <h3>Amert Inceptos Primolla Fringos</h3>
+              <p>
+                Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mus. Nullam id dolor id nibh.
+              </p>
+            </div>
+            <div class="journal-meta-info">
+              <span>Oct 26, 2014</span>
+              <span class="fancy-subtitle">Web Design</span>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="journal-item">
+          <div class="journal-image-wrapper">
+            <img src="img/12.png" alt="Journal Post 3"/>
+          </div>
+          <div class="journal-content">
+            <div>
+              <h3>Crases Malesuada Justo</h3>
+              <p>
+                Maecenas faucibus mollis interdum. Cum sociis natoque
+                penatibus et magnis dis parturient.
+              </p>
+            </div>
+            <div class="journal-meta-info">
+              <span>Oct 26, 2014</span>
+              <span class="fancy-subtitle">Photography</span>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="journal-item">
+          <div class="journal-image-wrapper">
+            <img src="img/13.png" alt="Journal Post 4"/>
+          </div>
+          <div class="journal-content">
+            <div>
+              <h3>Bonaue Crases Maremorn Purgos</h3>
+              <p>
+                Maecenas faucibus mollis interdum. Cum sociis natoque
+                penatibus et magnis dis parturient.
+              </p>
+            </div>
+            <div class="journal-meta-info">
+              <span>Oct 26, 2014</span>
+              <span class="fancy-subtitle">Branding</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-content">
+    <p class="copyright">
+      &copy; 2014 Keepsake. All rights reserved. Made by
+      <a href="https://start.goit.global/" target="_blank"
+      >GoIT Students</a
+      >.
+    </p>
+    <ul class="social-links">
+      <li><a href="#" class="social-icon social-rss" aria-label="RSS feed"></a></li>
+      <li><a href="#" class="social-icon social-fb" aria-label="Facebook page"></a></li>
+      <li><a href="#" class="social-icon social-twitter" aria-label="Twitter profile"></a></li>
+      <li><a href="#" class="social-icon social-dribbble" aria-label="Dribbble profile"></a></li>
+      <li><a href="#" class="social-icon social-pinterest" aria-label="Pinterest profile"></a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
